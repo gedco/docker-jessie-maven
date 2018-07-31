@@ -1,4 +1,4 @@
-# Gedco oracle-jdk-8u171 + Maven 3.5.3 base dev image.
+# Gedco oracle-jdk-8u171 + Maven 3.5.4 base dev image.
 #
 # Build usage: docker build -t gedco:jessie-maven --pull --rm .
 #   Run usage: docker run --name maven-testapp --rm -d -it -v $(pwd)/src:/usr/src/ gedco:jessie-maven /bin/bash
@@ -8,7 +8,7 @@ FROM debian:jessie
 
 # Mark this system as noninteractive.
 ENV DEBIAN_FRONTEND noninteractive
-ENV MAVEN_VERSION 3.5.3
+ENV MAVEN_VERSION 3.5.4
 ENV PATH /opt/apache-maven-${MAVEN_VERSION}/bin:${PATH}
 
 # Install and configure all the software. Clean.
